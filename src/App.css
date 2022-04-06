@@ -1,5 +1,5 @@
 body {
-  background-image: url("./img/background.png");
+  background-image: url("./img/weatherbgg.jpg");
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -9,21 +9,60 @@ body {
   
 }
 
+.container {
+  display:flexbox;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position:inherit;
+  float:right;
+  
+  
+  
+}
+
+.input{
+  padding: 15px;
+  width: 200%;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  
+  
+}
+
 .App {
   text-align: center;
-  font-family:monospace;
-  color:aliceblue;
+  font-family:fantasy;
+  color:rgb(247, 247, 247);
+  font-size: 50px;
 }
 
 .cards {
-  padding: 30px;
+  padding: 50px;
   display: flex;
-  row-gap: 30px;
-  column-gap: 20px;
+  row-gap: 50px;
+  column-gap: 30px;
   flex-wrap: wrap;
+  position:inherit;
+  flex-direction:row;
+  bottom: 60px;
+  top: -80px;
   
-  flex-direction: row;
   
+}
+
+.singlecard {
+  padding: 50px;
+  display:flex;
+  row-gap: 50px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  position:fixed;
+  flex-direction:column;
+  bottom: 40px;
+  top: 40px;
+
 }
 
 .cards div {
@@ -31,23 +70,81 @@ body {
   
 }
 
-.style {
+.styleDay {
   /* right: 350px; */
   width: 50%;
   margin: 0 auto; 
   float: none; 
   margin-bottom: 10px;
+  background-color:transparent!important;
+  border-color: lightblue !important;
 }
 
-.text {
-  color: rgb(2, 2, 82);
-  font-family: monospace;
+.styleNight {
+    /* right: 350px; */
+    width: 50%;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+    background-color:transparent !important;
+    border-color: midnightblue !important;
 }
 
-.description {
-  color:rgb(4, 61, 165);
-  font-family: monospace;
+.textDay {
+  color: whitesmoke;
+  font-family: fantasy;
+  font-size:250%!important;
 }
+
+.textNight {
+  color: whitesmoke;
+  font-family: fantasy;
+  font-size:250%!important;
+}
+
+
+.descriptionNight {
+  color:rgb(175, 3, 175);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:150%!important;
+}
+
+.descriptionDay {
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:150%!important;
+}
+
+.icon {
+  width:40%;
+  height:40%;
+}
+
+.tempDay {
+  color:rgb(29, 187, 240);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:200%!important;
+}
+
+.tempNight {
+  color:rgb(29, 187, 240);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:200%!important;
+}
+
+.nav{
+ background-color: rgb(2, 2, 17);
+	
+}
+
+.navtext{
+  color: rgb(175, 3, 175)!important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-size: 250% !important;
+}
+/* .color {
+  color:aqua !important;
+} */
   
 
 /* .App-logo {

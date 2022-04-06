@@ -158,7 +158,7 @@ var data = [
                 "lat": "32.783",
                 "lon": "-96.800",
                 "timezone_id": "America/Chicago",
-                "localtime": "2022-03-02 22:14",
+                "localtime": "2022-03-02 05:14",
                 "localtime_epoch": 1646259240,
                 "utc_offset": "-6.0"
             },
@@ -230,7 +230,7 @@ var data = [
                 "lat": "30.267",
                 "lon": "-97.743",
                 "timezone_id": "America/Chicago",
-                "localtime": "2022-03-02 22:14",
+                "localtime": "2022-03-02 07:14",
                 "localtime_epoch": 1646259240,
                 "utc_offset": "-6.0"
             },
@@ -374,7 +374,7 @@ var data = [
                 "lat": "6.962",
                 "lon": "-8.753",
                 "timezone_id": "Africa/Monrovia",
-                "localtime": "2022-03-03 04:14",
+                "localtime": "2022-03-03 08:14",
                 "localtime_epoch": 1646280840,
                 "utc_offset": "0.0"
             },
