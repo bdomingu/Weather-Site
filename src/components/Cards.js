@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import SearchCard from './SearchCard';
-import NavBar from './NavBar';
+
 
 export default function Cards({ data, convertToF, convertTime, isNight, icons }) {
     
@@ -16,6 +14,7 @@ export default function Cards({ data, convertToF, convertTime, isNight, icons })
         <div className="cards">
             {console.log(data)}
             {data.map((city) => {
+                console.log(city.data.location.localtime)
                 return (
                     <div >
                         <Card className={isNight(convertTime(city.data.location.localtime)) ? "styleNight" : "styleDay"}>

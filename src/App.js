@@ -16,6 +16,7 @@ import clear from './img/clear_icon.png';
 import fog from './img/fog_icon.png';
 import rainThunder from './img/rain_thunder.png';
 import lightRain from './img/light_rain.png';
+import lightDrizzle from './img/light_drizzle.png';
 // import NavbarComp from './components/NavbarComp';
 require('dotenv').config()
 //console.log(process.env.REACT_APP_WEATHER_API_KEY)
@@ -26,7 +27,7 @@ require('dotenv').config()
 
 function App() {
  
-  const [data, setData] = useState(jsonData); 
+  const [data, setData] = useState([]); 
   const [cities] = useState(['El Paso', 'Miami', 'Dallas', 'Austin', 'Bozeman', 'Fairplay']);
   const [locationData, setLocationData] = useState({});
   const [location, setLocation] = useState("");
@@ -79,6 +80,8 @@ function App() {
              return rainThunder;
        }  else if (description[i] === 'Light rain shower'){
              return lightRain;
+       }  else if (description[i] === 'Patchy light drizzle' || 'Patchy rain possible'){
+             return lightDrizzle;
        } else {
            return icon;
        }
