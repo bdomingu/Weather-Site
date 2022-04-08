@@ -24,7 +24,6 @@ export default function NavBar({farenheit, time, night, icons}) {
     <Container>
     <Navbar.Brand href="#home" className='navtext'>Forecast with Betty</Navbar.Brand>
     <Nav >
-      <SearchCard  temp={farenheit} ctime={time} night={night} icons={icons} />
     </Nav>
     </Container>
   </Navbar>
