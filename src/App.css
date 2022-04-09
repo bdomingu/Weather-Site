@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Rubik:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Paytone+One&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Paytone+One&family=Roboto+Serif&family=Rubik:wght@300&display=swap');
 
 body {
   background-image: url("./img/weatherbgg.jpg");
@@ -93,13 +95,13 @@ body {
 
 .textDay {
   color: whitesmoke;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Paytone One', sans-serif;
   font-size:150%!important;
 }
 
 .textNight {
   color: rgb(135, 135, 248) ;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Paytone One', sans-serif;
   font-size:150%!important;
 }
 
@@ -117,25 +119,25 @@ body {
 
 .descriptionNight {
   color:rgb(135, 135, 248);
-  font-family:'Rubik', sans-serif;
+  font-family: 'Roboto Serif', serif;;
   font-size:100%!important;
 }
 
 .descriptionDay {
   color:white;
-  font-family:'Rubik', sans-serif;
+  font-family: 'Roboto Serif', serif;
   font-size:100%!important;
 }
 
 .sDescriptionNight {
-  color:rgb(3, 3, 27);
-  font-family:'Rubik', sans-serif;
+  color:rgb(135, 135, 248);
+  font-family: 'Roboto Serif', serif;;
   font-size:150%!important;
 }
 
 .sDescriptionDay {
   color:white;
-  font-family:'Rubik', sans-serif;
+  font-family: 'Roboto Serif', serif;;
   font-size:150%!important;
 }
 .icon {
@@ -150,24 +152,24 @@ body {
 
 .tempDay {
   color:rgb(145, 222, 248);
-  font-family:'Rubik', sans-serif;
+  font-family:'Paytone One', sans-serif;
   font-size:150%!important;
 }
 
 .tempNight {
   color:rgb(145, 222, 248);
-  font-family:'Rubik', sans-serif;
+  font-family:'Paytone One', sans-serif;
   font-size:150%!important;
 }
 .sTempDay {
   color:rgb(145, 222, 248);
-  font-family:'Rubik', sans-serif;
+  font-family:'Paytone One', sans-serif;
   font-size:200%!important;
 }
 
 .sTempNight {
   color:rgb(145, 222, 248);
-  font-family:'Rubik', sans-serif;
+  font-family:'Paytone One', sans-serif;
   font-size:200%!important;
 }
 
@@ -178,7 +180,7 @@ body {
 
 .navtext{
   color: rgb(241, 82, 241)!important;
-  font-family:'Rubik', sans-serif ;
+  font-family: 'Paytone One', sans-serif;
   font-size: 150% !important;
   position:inherit;
   left: -100px;
