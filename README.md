@@ -1,7 +1,11 @@
 Weather-Site
 
-This is a simple weather site created with React. The site has weather information for six cities seen below. All of the data was pulled from a weather API. There is also some mock data being used to avoid reaching the limit on the API calls..
+This is a simple weather site created with React. The site has weather information for six cities seen below. The user can also search a city of their choosing and get the weather information. The data was pulled using an API from WeatherStack. There is also some mock data being used to avoid reaching the limit on the API calls.
 ![Alt text](src/img/weathersiteupdated.PNG)
+
+https://user-images.githubusercontent.com/92413990/162556932-f10b1265-6605-41aa-8e58-97b3bfad17be.mp4
+
+
 
 ## Available Scripts
 
