@@ -93,6 +93,7 @@ function App() {
   useEffect(() => {
 
       const getWeather = async () => {
+        // const t0= new Date().getTime()
         let result = []
         for (let i=0; i<cities.length; i++) {
            await axios.get(`http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHER_API_KEY}&query=${cities[i]}`).then(
@@ -101,7 +102,11 @@ function App() {
             }
             );
           }
+         
           await setData(result);
+          // const t1= new Date().getTime()
+          // result.responseTime=`${t1-t0}ms`
+          // console.log(result)
         }
 
       getWeather()
