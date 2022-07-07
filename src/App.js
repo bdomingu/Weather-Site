@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
+import Redis from "ioredis";
 // import background from './img/blue.png';
 import "./App.css";
 import axios from 'axios';
@@ -22,8 +23,12 @@ require('dotenv').config()
 //console.log(process.env.REACT_APP_WEATHER_API_KEY)
 
 
+
   
-  
+const redis = new Redis({
+  'port': 6379,
+  'host': '127.0.0.1'
+})
 
 function App() {
  
@@ -93,7 +98,7 @@ function App() {
   useEffect(() => {
 
       const getWeather = async () => {
-        // const t0= new Date().getTime()
+        const t0= new Date().getTime()
         let result = []
         for (let i=0; i<cities.length; i++) {
            await axios.get(`http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHER_API_KEY}&query=${cities[i]}`).then(
@@ -104,9 +109,9 @@ function App() {
           }
          
           await setData(result);
-          // const t1= new Date().getTime()
-          // result.responseTime=`${t1-t0}ms`
-          // console.log(result)
+          const t1= new Date().getTime()
+          result.responseTime=`${t1-t0}ms`
+          console.log(result)
         }
 
       getWeather()
