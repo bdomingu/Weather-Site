@@ -1,6 +1,7 @@
 {
   "name": "weather-site",
   "version": "0.1.0",
+  "homepage": "https://bdomingu.github.io/Weather-Site",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -15,9 +16,12 @@
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^2.1.8",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+   
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "Weather-Site -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
