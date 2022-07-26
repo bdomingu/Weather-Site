@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
-import Redis from "ioredis";
 // import background from './img/blue.png';
 import "./App.css";
 import axios from 'axios';
@@ -24,12 +23,6 @@ require('dotenv').config()
 
 
 
-  
-const redis = new Redis({
-  'port': 6379,
-  'host': '127.0.0.1'
-})
-
 function App() {
  
   const [data, setData] = useState([]); 
@@ -51,7 +44,6 @@ function App() {
      return Number(newTime[0]);
    
  }
-  // const dayNight = console.log((convertTime(data[0].data.location.localtime)));
  
   const isNight = (time) => {
      if (time >= 18 || time <= 6){
@@ -108,10 +100,8 @@ function App() {
             );
           }
          
-          await setData(result);
-          const t1= new Date().getTime()
-          result.responseTime=`${t1-t0}ms`
-          console.log(result)
+            await setData(result);
+         
         }
 
       getWeather()

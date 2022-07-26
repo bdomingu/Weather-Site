@@ -1,9 +1,5 @@
-import React, { Component } from 'react'
-import { useState } from 'react';
-import axios from 'axios';
-import Card from 'react-bootstrap/Card';
-import Search from './Search';
-import SingleCard from './SingleCard';
+import React from 'react'
+
 
 
 export default function SearchCard({location, setLocation, searchLocation}) {
