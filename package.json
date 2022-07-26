@@ -1,7 +1,7 @@
 {
   "name": "weather-site",
   "version": "0.1.0",
-  "homepage": "https://bdomingu.github.io/Weather-Site",
+  "homepage": "https://main.d1n60xezs3wfun.amplifyapp.com",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
